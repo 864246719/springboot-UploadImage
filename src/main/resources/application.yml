@@ -1,0 +1,23 @@
+
+##配置mybatis
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+  type-aliases-package: cn.kgc57.demo.uploadfilesspringboot.pojo
+server:
+  port: 8881
+
+spring:
+  application:
+    name: user
+    ##配置mysql
+  datasource:
+    url: jdbc:mysql://localhost:3306/uploadfiles?useUnicode=true&amp;characterEncoding=utf-8
+    username: hbstudent
+    password: hbstudent
+    driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+  resources:
+    static-locations: classpath:/static
